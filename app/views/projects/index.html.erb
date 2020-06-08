@@ -1,0 +1,5 @@
+<% @projects.each do |project| %>
+  <h1><%= link_to project.name, project_path(project.id) %></h1>
+  <p><%= project.funding_goal %></p>
+<% end %>
+
